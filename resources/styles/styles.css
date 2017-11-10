@@ -1,0 +1,32 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background: black url("../images/background.jpg") no-repeat center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	color: white;
+}
+
+.link-icon {
+	width: 100px;
+	height: 100px;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.row > * {
+	padding: 10px;
+}
+
+.row > a {
+	text-decoration: none;
+	color: white;
+}
