@@ -30,3 +30,7 @@ body {
 	text-decoration: none;
 	color: white;
 }
+
+.row .expansion {
+	width: 300px;
+}
