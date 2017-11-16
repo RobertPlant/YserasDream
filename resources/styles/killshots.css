@@ -13,7 +13,7 @@ body > h3 {
 	font-size: 30px;
 }
 
-body > div {
+body > .images {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -22,13 +22,13 @@ body > div {
 	margin-bottom: 150px;
 }
 
-body > div > div {
+body > .images > div {
 	max-width: 500px;
 	position: relative;
 	padding: 10px;
 }
 
-body > div > div > span {
+body > .images > div > span {
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
@@ -37,7 +37,7 @@ body > div > div > span {
 	color: #000;
 }
 
-body > div > div > img {
+body > .images > div > img {
 	width: 500px;
 	height: 281px;
 	overflow: hidden;

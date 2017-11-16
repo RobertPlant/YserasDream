@@ -2,6 +2,8 @@
 <head>
     <title>Ysera's Dream Killshots</title>
     <link href="../../resources/styles/killshots.css" rel="stylesheet">
+    <link  href="../../node_modules/viewerjs/dist/viewer.css" rel="stylesheet">
+    <script src="../../node_modules/viewerjs/dist/viewer.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="../../resources/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../../resources/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../../resources/favicon/apple-icon-72x72.png">
@@ -21,18 +23,26 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="body">
 
 <h3>Dragon Soul</h3>
-<div>
+<div class="images">
     <div>
         <img src="dragonSoul/warlordZonozz.jpg">
         <span>Warlord Zon'ozz</span>
     </div>
 </div>
 
+<h3>Blackwing Descent</h3>
+<div class="images">
+    <div>
+        <img src="dragonSoul/warlordZonozz.jpg">
+        <span>Nefarian</span>
+    </div>
+</div>
+
 <h3>Firelands</h3>
-<div>
+<div class="images">
     <div>
         <img src="firelands/alysrazor.jpg">
         <span>Warlord Zon'ozz</span>
@@ -52,7 +62,7 @@
 </div>
 
 <h3>Throne of the Four Winds</h3>
-<div>
+<div class="images">
     <div>
         <img src="throneOfTheFourWinds/alAkir.jpg">
         <span>Al'Akir</span>
@@ -61,3 +71,7 @@
 
 </body>
 </html>
+
+<script>
+	new Viewer(document.getElementById('body'));
+</script>

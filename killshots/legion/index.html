@@ -2,6 +2,8 @@
 <head>
     <title>Ysera's Dream Killshots</title>
     <link href="../../resources/styles/killshots.css" rel="stylesheet">
+    <link  href="../../node_modules/viewerjs/dist/viewer.css" rel="stylesheet">
+    <script src="../../node_modules/viewerjs/dist/viewer.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="../../resources/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../../resources/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../../resources/favicon/apple-icon-72x72.png">
@@ -21,7 +23,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="body">
 
 <h3 hidden>Antorus, the Burning Throne</h3>
 <div>
@@ -29,7 +31,7 @@
 </div>
 
 <h3>Tomb of Sargeras</h3>
-<div>
+<div class="images">
     <div>
         <img src="tombOfSargeras/kiljaeden.jpg">
         <span>Kil'jaeden</span>
@@ -69,7 +71,7 @@
 </div>
 
 <h3>Nighthold</h3>
-<div>
+<div class="images">
     <div>
         <img src="nighthold/guldan.jpg">
         <span>Gul'dan</span>
@@ -113,7 +115,7 @@
 </div>
 
 <h3>Trial of Valor</h3>
-<div>
+<div class="images">
     <div>
         <img src="trialOfValor/helya.jpg">
         <span>Helya</span>
@@ -129,7 +131,7 @@
 </div>
 
 <h3>Emerald Nightmare</h3>
-<div>
+<div class="images">
     <div>
         <img src="emeraldNightmare/xavius.jpg">
         <span>Xavius</span>
@@ -162,3 +164,7 @@
 
 </body>
 </html>
+
+<script>
+	new Viewer(document.getElementById('body'));
+</script>

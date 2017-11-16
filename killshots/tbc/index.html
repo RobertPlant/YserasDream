@@ -2,6 +2,8 @@
 <head>
     <title>Ysera's Dream Killshots</title>
     <link href="../../resources/styles/killshots.css" rel="stylesheet">
+    <link  href="../../node_modules/viewerjs/dist/viewer.css" rel="stylesheet">
+    <script src="../../node_modules/viewerjs/dist/viewer.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="../../resources/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../../resources/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../../resources/favicon/apple-icon-72x72.png">
@@ -21,7 +23,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="body">
 
 <h3 hidden>Antorus, the Burning Throne</h3>
 <div>
@@ -29,7 +31,7 @@
 </div>
 
 <h3>Gruul's Lair</h3>
-<div>
+<div class="images">
     <div>
         <img src="gruulsLair/gruul.jpg">
         <span>Gruul</span>
@@ -41,7 +43,7 @@
 </div>
 
 <h3>Karazhan</h3>
-<div>
+<div class="images">
     <div>
         <img src="karazhan/attumenTheHuntsman.jpg">
         <span>Attumen The Huntsman</span>
@@ -57,7 +59,7 @@
 </div>
 
 <h3>Magtheridon's Lair</h3>
-<div>
+<div class="images">
     <div>
         <img src="magtheridonsLair/magtheridon.jpg">
         <span>Magtehridon</span>
@@ -65,7 +67,7 @@
 </div>
 
 <h3>Zul'Aman</h3>
-<div>
+<div class="images">
     <div>
         <img src="zulaman/halazzi.jpg">
         <span>Halazzi</span>
@@ -78,3 +80,7 @@
 
 </body>
 </html>
+
+<script>
+	new Viewer(document.getElementById('body'));
+</script>
